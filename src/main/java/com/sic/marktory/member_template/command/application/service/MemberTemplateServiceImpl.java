@@ -19,14 +19,16 @@ public class MemberTemplateServiceImpl implements MemberTemplateService {
     private final MemberTemplateRepository memberTemplateRepository;
 
     // 회원이 템플릿을 작성
+    // TODO: 예외처리 (마크다운 형식, 빈값, 다른 타입값)
+    // TODO: 트랜잭션 처리 (public인 경우 public_template에 올리기)
     @Override
     @Transactional
     public Long createMemberTemplate(MemberTemplateCreateRequest request) {
         MemberTemplateEntity template = MemberTemplateEntity.builder()
                 .title(request.getTitle())
-                .content(request.getContent())
+                .content(request.getContent()) // TODO: common 브랜치 merge후 html 변환 적용
                 .writtenDate(DateTimeUtil.nowFormatted())
-//                .visibility(new Visibility(request.getVisibility()))
+                .visibility(new Visibility(request.getVisibility()))
                 .usageCount(0)
                 .isCopy('N')
                 // TODO : 회원의 id를 받아서 생성해야 함. 현재는 command 구조 테스트를 위한 코드임.
@@ -47,7 +49,7 @@ public class MemberTemplateServiceImpl implements MemberTemplateService {
 
         template.update(
                 request.getTitle(),
-                request.getContent(),
+                request.getContent(), // TODO: common 브랜치 merge후 html 변환 적용
                 new Visibility(request.getVisibility()),
                 DateTimeUtil.nowFormatted()
         );
