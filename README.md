@@ -107,7 +107,7 @@
 
 <br>
 
-# WBS 
+# WBS (https://docs.google.com/spreadsheets/d/1Fo4dbNoZw4fOaGpFP54IiKlQQwziKJoDIP2-uSstzzg/edit?usp=sharing)
 ![WBS이미지](./docs/wbs/wbs.png)
 
 <br>
