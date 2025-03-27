@@ -112,7 +112,7 @@
 
 <br>
 
-# 요구사항 명세서 
+# 요구사항 명세서 (https://docs.google.com/spreadsheets/d/1yIbZjcO_11O52FWxNXQUNZFIGag_PA7eXX80ekW4n4o/edit?usp=sharing)
 ![요구사항명세서이미지](./docs/reqDoc/요구사항명세서.png)
 
 <br>
@@ -177,18 +177,18 @@
  <summary> 회원가입 인증 이메일 전송</summary>
   <img src="./docs/APITest/member/member01.png" width=700>
   <img src="./docs/APITest/member/member02.png" width=700>
-
-- 일반 회원 토큰  
+  
+  - 일반 회원 토큰  
   <img src="./docs/APITest/member/member03.png" width=700>
-
-- 관리자 토큰
+  
+  - 관리자 토큰
   <img src="./docs/APITest/member/member04.png" width=700>
 </details>
 <details>
  <summary>회원 가입 인증 완료</summary>
   <img src="./docs/APITest/member/member05.png" width=700>
-
-- 회원 가입 인증 실패
+  
+  - 회원 가입 인증 실패
   <img src="./docs/APITest/member/member06.png" width=700>
 </details>
 <details>
@@ -227,10 +227,11 @@
 </details>
 <details>
  <summary> 템플릿 생성 </summary>
- 
-- 요청
+  
+  - 요청
   <img src="./docs/APITest/m_templates/m_templates03.png" width=700>
-- 결과(서버에서 HTML 코드 생성 후 반환)
+  
+  - 결과(서버에서 HTML 코드 생성 후 반환)
   <img src="./docs/APITest/m_templates/m_templates04.png" width=700>
 </details>
 <details>
